@@ -13,7 +13,7 @@ protocol Coordinator: AnyObject {
 final class AppCoordinator: Coordinator, AuthModuleOutput, RegisterModuleOutput {
     private let window: UIWindow
     private let tabBarController = UITabBarController()
-    
+    ///
     private let authService: AuthServiceProtocol = AuthService()
     private let profileStorage: ProfileStorageProtocol = ProfileStorage()
     private let networkService: NetworkServiceProtocol = NetworkService()
